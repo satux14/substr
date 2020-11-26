@@ -39,7 +39,7 @@ void find_substr(char *inp) {
 			}
 		}
 	}
-	printf("Input String: %s, Substring: %s of count: %d\n", inp, max_str, prev_matched);
+	printf("Input String: %s, Substring: %s of count: %d\n", inp, max_str, (prev_matched+1));
 	
 	return;
 }
@@ -47,4 +47,5 @@ void find_substr(char *inp) {
 int main() {
 	find_substr("TESTETESTSTST");
 	find_substr("SATHISHTHIS");
+	find_substr("GEEKSFORGEEKS");
 }
