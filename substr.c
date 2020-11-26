@@ -47,6 +47,7 @@ void find_substr(char *inp) {
                         ((match_count == prev_matched) && ((j - i) > match_chars)))) {
                 // Save matched chars here
                 strncpy(max_str, &inp[i], (j - i));
+                max_str[(j - i) + 1] = '\0';
                 prev_matched = match_count;
                 match_chars = j - i;
                 //Debug
